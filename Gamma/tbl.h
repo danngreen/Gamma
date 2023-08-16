@@ -704,15 +704,15 @@ namespace{
 		return T(sin(p));
 	}
 
-	template<>
-	Complex<float> getSin<Complex<float> >(double p){
-		return Complex<float>(float(cos(p)), float(sin(p)));
-	}
+	// template<>
+	// Complex<float> getSin<Complex<float> >(double p){
+	// 	return Complex<float>(float(cos(p)), float(sin(p)));
+	// }
 
-	template<>
-	Complex<double> getSin<Complex<double> >(double p){
-		return Complex<double>(cos(p), sin(p));
-	}
+	// template<>
+	// Complex<double> getSin<Complex<double> >(double p){
+	// 	return Complex<double>(cos(p), sin(p));
+	// }
 };
 
 template <class T>
