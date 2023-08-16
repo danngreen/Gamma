@@ -8,7 +8,8 @@
 	Random variable classes
 */
 
-#include <ctime> // time()
+// #include <ctime> // time()
+#include <cstdint>
 #include "Gamma/gen.h"
 #include "Gamma/std_swap.h"
 #include "Gamma/Conversion.h"
@@ -22,7 +23,7 @@ namespace rnd{
 		static gen::RMulAdd<uint32_t> seedGen(1664525, 1013904223);
 		static bool initSeed = true;
 		if(initSeed){
-			seedGen.val = uint32_t(std::time(NULL));
+			seedGen.val = 0;//uint32_t(std::time(NULL));
 			initSeed = false;
 		} 
 		return seedGen();

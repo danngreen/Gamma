@@ -21,6 +21,7 @@
 #endif
 
 #include <cmath>
+#include <cstdint>
 #include <type_traits> // is_fundamental
 #include "Gamma/Conversion.h"
 
